@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>One Year of Us — Our First Anniversary</title>
+<meta name="description" content="A love letter in pixels — celebrating one beautiful year together with memories, milestones, and infinite gratitude." />
+<meta property="og:title" content="One Year of Us — Our First Anniversary" />
+<meta property="og:description" content="A year of laughter, growth, and love. Here's to forever." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Dancing+Script:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="petals" aria-hidden="true"></div>
+
+  <!-- Entry Gate -->
+  <div id="entry">
+    <div id="password-screen">
+      <img src="images/mickey-0.gif" alt="Mickey Mouse" class="mickey-img" />
+      <h2 class="entry-title">Say My Name!</h2>
+      <input type="password" id="password-input" placeholder="Password..." />
+      <button id="submit-password"> Submit </button>
+    </div>
+
+    <div id="questions-screen" style="display: none;">
+      <div id="question-container">
+        <img id="mickey-gif" src="images/mickey-0.gif" alt="Mickey" class="mickey-gif" />
+        <p id="question-text"></p>
+        <div class="buttons">
+          <button id="yes-btn">Yes 💕</button>
+          <button id="no-btn">No 😢</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="success-screen" style="display: none;">
+      <img src="images/mickey-6.gif" alt="Mickey celebrating" class="mickey-gif" />
+      <h2 class="anniversary-text">Happy 1st Anniversary My Love 💖</h2>
+      <button id="enter-site">A Little Surprise For You 🎉</button>
+    </div>
+  </div>
+
+  <main style="display: none;">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="images/mickey-cheeku.jpg" alt="Couple at sunset in a field of roses" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content reveal">
+        <p class="script rose hero-eyebrow">one year of us</p>
+        <h1 class="hero-title">
+          <span>Cheeku</span>
+          <span class="amp script gradient-rose">&amp;</span>
+          <span>Mickey</span>
+        </h1>
+        <div class="days-pill">
+          <span class="heart">♥</span>
+          <span class="serif days-text"><span id="days" class="gradient-rose">365</span> <span class="muted">days together</span></span>
+          <span class="heart">♥</span>
+        </div>
+        <p class="quote serif">"And in all the world, there is no heart for me like yours."</p>
+      </div>
+      <div class="scroll-hint">scroll ↓</div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="timeline">
+      <div class="container">
+        <div class="section-head">
+          <p class="script rose">our story</p>
+          <h2>A year, told softly</h2>
+        </div>
+        <div class="slideshow" id="timeline-slideshow">
+          <div class="slides-container" id="slides-container"></div>
+          <button class="slide-nav prev" aria-label="Previous slide">&larr;</button>
+          <button class="slide-nav next" aria-label="Next slide">&rarr;</button>
+          <div class="slide-indicators" id="slide-indicators"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery">
+      <div class="container">
+        <div class="section-head">
+          <p class="script rose">moments</p>
+          <h2>Little forevers</h2>
+          <p class="muted section-sub">A handful of frames from a year I'd live again in a heartbeat.</p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+    <section class="letter">
+      <div class="letter-wrap">
+        <div class="letter-card reveal-on-scroll">
+          <div class="letter-badge">♥</div>
+          <div class="letter-flourish letter-flourish-top" aria-hidden="true">
+            <svg viewBox="0 0 560 90" role="img" focusable="false">
+              <path class="flourish-line" d="M140 58 H420" />
+              <path class="flourish-main" d="M85 42 C115 78 167 18 226 34 C252 41 270 60 280 60 C290 60 308 41 334 34 C393 18 445 78 475 42" />
+              <path class="flourish-main" d="M280 60 C262 31 224 31 197 45 C164 62 126 65 98 45" />
+              <path class="flourish-main" d="M280 60 C298 31 336 31 363 45 C396 62 434 65 462 45" />
+              <path class="flourish-main" d="M85 42 C49 24 44 66 79 62 C105 59 105 30 83 28" />
+              <path class="flourish-main" d="M475 42 C511 24 516 66 481 62 C455 59 455 30 477 28" />
+              <path class="flourish-main" d="M154 44 C128 31 127 63 153 62 C176 61 181 37 161 37" />
+              <path class="flourish-main" d="M406 44 C432 31 433 63 407 62 C384 61 379 37 399 37" />
+              <path class="flourish-main" d="M232 43 C249 23 276 33 280 60" />
+              <path class="flourish-main" d="M328 43 C311 23 284 33 280 60" />
+            </svg>
+          </div>
+          <p class="script rose center">a letter, for you</p>
+          <figure class="letter-photo">
+            <img src="images/we-forever.jpg" alt="Cheeku and Mickey together" loading="lazy" />
+          </figure>
+          <div class="letter-body serif">
+            <p>My love,</p>
+            <p>A year ago today, I had no idea how full a heart could feel. You walked into my life softly — and somehow, every corner of it brightened. The mornings became warmer. The quiet became sweeter. The world, kinder.</p>
+            <p>Thank you for the slow Sundays, the inside jokes nobody else would understand, and for choosing me — again and again, even on the days I forget to choose myself.</p>
+            <p>Here's to year one. To every laugh, every late-night talk, every soft "I love you" whispered into the dark. And here's to all the years still folded ahead of us, waiting to be lived.</p>
+            <p class="signoff script gradient-rose">always yours mickey</p>
+          </div>
+          <div class="letter-flourish letter-flourish-bottom" aria-hidden="true">
+            <svg viewBox="0 0 560 90" role="img" focusable="false">
+              <path class="flourish-line" d="M140 58 H420" />
+              <path class="flourish-main" d="M85 42 C115 78 167 18 226 34 C252 41 270 60 280 60 C290 60 308 41 334 34 C393 18 445 78 475 42" />
+              <path class="flourish-main" d="M280 60 C262 31 224 31 197 45 C164 62 126 65 98 45" />
+              <path class="flourish-main" d="M280 60 C298 31 336 31 363 45 C396 62 434 65 462 45" />
+              <path class="flourish-main" d="M85 42 C49 24 44 66 79 62 C105 59 105 30 83 28" />
+              <path class="flourish-main" d="M475 42 C511 24 516 66 481 62 C455 59 455 30 477 28" />
+              <path class="flourish-main" d="M154 44 C128 31 127 63 153 62 C176 61 181 37 161 37" />
+              <path class="flourish-main" d="M406 44 C432 31 433 63 407 62 C384 61 379 37 399 37" />
+              <path class="flourish-main" d="M232 43 C249 23 276 33 280 60" />
+              <path class="flourish-main" d="M328 43 C311 23 284 33 280 60" />
+            </svg>
+          </div>
+        </div>
+        <p class="years" id="years"></p>
+      </div>
+    </section>
+
+    <footer>
+      <p class="script gradient-rose footer-title">happy first anniversary</p>
+      <p class="footer-sub">made with love · Cheeku &amp; Mickey</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
